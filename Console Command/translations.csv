@@ -1,0 +1,10 @@
+KEYS,en,de
+cmd.addition.description,"Adds 2 numbers","Addiert 2 Zahlen"
+cmd.addition.extendeddescription,"Adds 2 numbers and this is a really really long extra description","Addiert 2 Zahlen und das ist eine wirklich wirklich lange Beschreibung"
+cmd.error.description,"This command always errors","Dieser Befehl sendet immer eine Fehlermeldung"
+cmd.advanced.description,"Example description","Beispielbeschreibung"
+cmd.manual.description,"Example description","Beispielbeschreibung" 
+cmd.simple.description,"Example description","Beispielbeschreibung" 
+cmd.translate.description,"Example description","Beispielbeschreibung" 
+cmd.translate.success,"This is translated into english! Extra: $1","Das wurde auf Deutsch übersetzt! Extra: $1"
+cmd.waila.description,"Example description","Beispielbeschreibung" 
