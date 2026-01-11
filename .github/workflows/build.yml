@@ -150,3 +150,19 @@ jobs:
         with:
           name: Artifacts
           path: FinalArtifacts/*.dll
+
+      - name: 5. Create or Update Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: continuous-build
+          name: Continuous Build
+          body: |
+            This release contains the latest automated build artifacts.
+            **SR2 Version:** ${{ steps.manifest_lookup.outputs.manifest_id }}
+            **MelonLoader:** ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.SR2Ver-MLVer || env.DEFAULT_SR2_VER_MLVER }}
+          draft: false
+          prerelease: true
+          files: FinalArtifacts/*.dll
+          make_latest: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
