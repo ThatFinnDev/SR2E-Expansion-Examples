@@ -101,6 +101,7 @@ jobs:
               exit 1
           fi
           echo "manifest_id=$MANIFEST_ID" >> $GITHUB_OUTPUT
+          echo "manifest_id_long=$CHOICE" >> $GITHUB_OUTPUT
 
       - name: 1. Download Dependencies
         shell: bash
@@ -160,7 +161,7 @@ jobs:
           name: Continuous Build
           body: |
             This release contains the latest automated build artifacts.
-            **SR2 Version:** ${{ steps.manifest_lookup.outputs.manifest_id }}
+            **SR2 Version:** ${{ steps.manifest_lookup.outputs.manifest_id_long }}
             **MelonLoader:** ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.SR2Ver-MLVer || env.DEFAULT_SR2_VER_MLVER }}
           draft: false
           prerelease: false
