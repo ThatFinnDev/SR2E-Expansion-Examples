@@ -1,6 +1,6 @@
-namespace ExampleExpansion.Commands;
+namespace StarlightExampleExpansion.Commands;
 
-internal class SimpleCommand : SR2ECommand
+internal class SimpleCommand : StarlightCommand
 {
     public override string ID => "simple";
     public override string Usage => "simple";

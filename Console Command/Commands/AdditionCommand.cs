@@ -1,6 +1,6 @@
-namespace ExampleExpansion.Commands;
+namespace StarlightExampleExpansion.Commands;
 
-internal class AdditionCommand : SR2ECommand
+internal class AdditionCommand : StarlightCommand
 {
     public override string ID => "addition";
     // Use <> for mandatory arguments and [] for optional arguments

@@ -1,6 +1,6 @@
-namespace ExampleExpansion.Commands;
+namespace StarlightExampleExpansion.Commands;
 
-internal class TranslateCommand : SR2ECommand
+internal class TranslateCommand : StarlightCommand
 {
     public override string ID => "translate";
     public override string Usage => "translate";
@@ -11,7 +11,11 @@ internal class TranslateCommand : SR2ECommand
         // This command requires no arguments
         if (!args.IsBetween(0,0)) return SendNoArguments();
 
-        SendMessage(translation("cmd.translate.success","hello"));
+        
+        // The translations are defined in Assets/translations.csv
+        SendMessageTr("cmd.translate.success","hello");
+        // or:
+        // SendMessage(Tr("cmd.translate.success","hello"));
         return true;
     }
 }

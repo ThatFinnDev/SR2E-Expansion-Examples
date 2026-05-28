@@ -1,6 +1,6 @@
-namespace ExampleExpansion.Commands;
+namespace StarlightExampleExpansion.Commands;
 
-internal class AdvancedCommand : SR2ECommand
+internal class AdvancedCommand : StarlightCommand
 {
     public override string ID => "advanced";
     // Use <> for mandatory arguments and [] for optional arguments
@@ -34,7 +34,7 @@ internal class AdvancedCommand : SR2ECommand
         return true;
     }
 
-    public override void OnGameContext(GameContext gameContext)
+    public override void AfterGameContext(GameContext gameContext)
     {
         // Acquire custom things for your command
     }

@@ -1,7 +1,7 @@
-namespace ExampleExpansion.Commands;
+namespace StarlightExampleExpansion.Commands;
 
 
-internal class WhatamilookingatCommand : SR2ECommand
+internal class WhatamilookingatCommand : StarlightCommand
 {
     public override string ID => "waila";
     public override string Usage => "waila";

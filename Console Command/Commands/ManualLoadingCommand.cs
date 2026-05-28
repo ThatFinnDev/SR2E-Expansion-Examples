@@ -1,6 +1,6 @@
-namespace ExampleExpansion.Commands;
+namespace StarlightExampleExpansion.Commands;
 
-internal class ManualLoadingCommand : SR2ECommand
+internal class ManualLoadingCommand : StarlightCommand
 {
     public override string ID => "manual";
     public override string Usage => "manual";

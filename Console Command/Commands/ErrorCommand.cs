@@ -1,6 +1,6 @@
 namespace ExampleExpansion.Commands;
 
-internal class ErrorCommand : SR2ECommand
+internal class ErrorCommand : StarlightCommand
 {
     public override string ID => "error";
     public override string Usage => "error";
