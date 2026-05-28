@@ -1,4 +1,4 @@
-# SR2E Expansion Examples
-This repo contains example expansions for the Slime Rancher 2 mod [SR2E](https://github.com/ThatFinnDev/SR2E)
+# Starlight Expansion Examples
+This repo contains example expansions for the Slime Rancher 2 mod [Starlight](https://github.com/ThatFinnDev/Starlight)
 
-Web: [Click here](https://sr2e.sr2.dev/)
+Development Guide: [Click here](https://starlight.sr2.dev/dev)
